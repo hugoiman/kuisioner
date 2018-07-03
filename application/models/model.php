@@ -2,12 +2,28 @@
 
 class Model extends CI_Model{
 
-	function getAdmin($table,$where){
-		return $this->db->get_where($table,$where);
-	}
-
-	function getMember($table,$where){
-		return $this->db->get_where($table,$where);
+	function create(){
 
 	}
+
+	function store(){
+
+	}
+
+	function edit($id,$table){
+
+	}
+
+	function show($id,$table){
+
+	}
+
+	function update($id,$table){
+
+	}
+
+	function delete($id,$table){
+
+	}
+
 }
