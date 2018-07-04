@@ -8,7 +8,8 @@ class Controller extends CI_Controller{
 	}
 
 	function index(){
-		$this->load->view('admin/dashboard');
+		//$this->load->view('admin/dashboard');
+		$this->load->view('user/dashboard');
 	}
 
 	function create(){
@@ -36,3 +37,4 @@ class Controller extends CI_Controller{
 	}
 
 }
+?>
