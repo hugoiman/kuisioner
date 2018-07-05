@@ -14,8 +14,8 @@ class Model extends CI_Model{
 
 	}
 
-	function show($id,$table){
-
+	function show($table,$where){
+		return $this->db->get_where($table,$where);
 	}
 
 	function update($id,$table){
