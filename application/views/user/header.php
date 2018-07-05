@@ -45,9 +45,9 @@
     <!-- Logo -->
     <a href="<?php echo base_url()?>assets/index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>-S</span>
+      <span class="logo-mini"><b>U</b>-S</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>-S</span>
+      <span class="logo-lg"><b>User</b>-S</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -69,8 +69,8 @@
               <li class="user-header">
                 <img src="<?php echo base_url()?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                 <p>
-                  Rayyan Abhad - Web Developer
-                  <small>Member since Nov. 2012</small>
+                  Rayyan Abhad - HRD
+                  <small>155150200111222</small>
                 </p>
               </li>
               <!-- Menu Footer-->
@@ -96,7 +96,7 @@
         </div>
         <div class="pull-left info">
           <p>Rayyan Abhad</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="#"><i class="fa fa-circle text-success"></i> 155150200111222</a>
         </div>
       </div>
       <!-- sidebar menu: : style can be found in sidebar.less -->
@@ -107,14 +107,14 @@
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
+        <li>
+          <a href="<?php echo base_url('controller/showPage/statistik'); ?>">
             <i class="fa fa-pie-chart"></i>
             <span>Statistik</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
+        <li>
+          <a href="<?php echo base_url('controller/showPage/create_kuisioner'); ?>">
             <i class="fa fa-edit"></i> <span>Buat Kuisioner</span>
           </a>
         </li>

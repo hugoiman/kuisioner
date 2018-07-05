@@ -6,7 +6,7 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <div class="alert alert-info" role="alert">Info! Mohon masukan data dengan benar</div>
+      <div class="alert alert-info" role="alert">Info! <br><br> Mohon masukan data dengan benar</div>
     </section>
 
     <section class="content">
@@ -29,19 +29,19 @@
           </thead>
           <tbody>
             <?php
-
-              foreach ($datas as $datax) {
+            $count = 1;
+              foreach ($datas as $data) {
             ?>
             <tr>
-              <td></td>
-              <td><?php $datax['soal_quisioner']; ?></td>
+              <td><?php $count ?></td>
+              <td><?php $data['soal_quisioner'] ?></td>
               <td><input type="radio" name="x" value=""> </td>
               <td><input type="radio" name="x" value=""> </td>
               <td><input type="radio" name="x" value=""> </td>
               <td><input type="radio" name="x" value=""> </td>
               <td><input type="radio" name="x" value=""> </td>
             </tr>
-            <?php } ?>
+            <?php $count++; } ?>
           </tbody>
         </table>
       </div>

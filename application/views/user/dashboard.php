@@ -12,9 +12,9 @@
       </h1>
       <div class="box">
         <div class="box-body">
-          <a type="button" class="btn btn-default btn-block" href="<?php echo base_url('controller/show/1'); ?>">Judul 1</a>
-          <a type="button" class="btn btn-default btn-block" href="<?php echo base_url('controller/show/question2'); ?>">Judul 1</a>
-          <a type="button" class="btn btn-default btn-block" href="<?php echo base_url('controller/show/question3'); ?>">Judul 1</a>
+          <a type="button" class="btn btn-default btn-block" href="<?php echo base_url('admin_c/show/1'); ?>">Judul 1</a>
+          <a type="button" class="btn btn-default btn-block" href="<?php echo base_url('admin_c/show/question2'); ?>">Judul 1</a>
+          <a type="button" class="btn btn-default btn-block" href="<?php echo base_url('admin_c/show/question3'); ?>">Judul 1</a>
         </div>
       </div>
     </section>
