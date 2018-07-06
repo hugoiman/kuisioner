@@ -1,9 +1,9 @@
 <?php
-class Admin_c extends CI_Controller{
+class C_admin extends CI_Controller{
 
 	function __construct(){
 		parent::__construct();
-		$this->load->model('admin_m');
+		$this->load->model('c_admin');
 
 	}
 
@@ -25,8 +25,8 @@ class Admin_c extends CI_Controller{
 	}
 	function show($id){
 		$where = array('id_quisioner' => $id);
-		//$data['datas'] = $this->model->show('tb_soal_kuisioner',$where);
-		$this->load->view('admin/question');
+		$data['datas'] = $this->model->show('tb_soal_kuisioner',$where)->result_array();
+		$this->load->view('admin/question', $data);
 	}
 
 	function showPage($page){

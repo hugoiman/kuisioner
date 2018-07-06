@@ -1,6 +1,6 @@
 <?php
 
-class Admin_m extends CI_Model{
+class M_user extends CI_Model{
 
 	function create(){
 
@@ -14,8 +14,12 @@ class Admin_m extends CI_Model{
 
 	}
 
+	function getJudul(){
+		$judul = $this->db->query("SELECT * FROM tb_kuisioner");
+		return $judul;
+	}
 	function show($table,$where){
-
+		return $this->db->get_where($table,$where);
 	}
 
 	function update($id,$table){

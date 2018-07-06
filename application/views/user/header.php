@@ -60,27 +60,8 @@
         <ul class="nav navbar-nav">
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="<?php echo base_url()?>assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Rayyan Abhad</span>
-            </a>
-            <ul class="dropdown-menu">
-              <!-- User image -->
-              <li class="user-header">
-                <img src="<?php echo base_url()?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                <p>
-                  Rayyan Abhad - HRD
-                  <small>155150200111222</small>
-                </p>
-              </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                </div>
-              </li>
-            </ul>
-          </li>
+            <a href="<?php echo base_url('c_auth/logout'); ?>" >Sign out</a>
+            </li>
         </ul>
       </div>
     </nav>
@@ -95,26 +76,26 @@
           <img src="<?php echo base_url()?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Rayyan Abhad</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> 155150200111222</a>
+          <p><?php echo $this->session->userdata("name"); ?> - <?php echo $this->session->userdata("division"); ?></p>
+          <a href="#"><i class="fa fa-circle text-success"></i><?php echo $this->session->userdata("nipg"); ?></a>
         </div>
       </div>
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Navigation</li>
         <li class="active treeview">
-          <a href="<?php echo base_url('controller'); ?>">
+          <a href="<?php echo base_url('c_user'); ?>">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
         <li>
-          <a href="<?php echo base_url('controller/showPage/statistik'); ?>">
+          <a href="<?php echo base_url('c_user/showPage/statistik'); ?>">
             <i class="fa fa-pie-chart"></i>
             <span>Statistik</span>
           </a>
         </li>
         <li>
-          <a href="<?php echo base_url('controller/showPage/create_kuisioner'); ?>">
+          <a href="<?php echo base_url('c_user/showPage/create_kuisioner'); ?>">
             <i class="fa fa-edit"></i> <span>Buat Kuisioner</span>
           </a>
         </li>

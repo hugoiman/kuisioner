@@ -12,10 +12,7 @@
       </h1>
       <div class="box">
         <div class="box-body">
-          <?php foreach ($judul as $judul): ?>
-            <a type="button" class="btn btn-default btn-block" href="<?php echo base_url('judul/'); echo $judul['id_quisioner']; ?>"><?php echo $judul['judul_quisioner']; ?></a>
-          <?php endforeach; ?>
-
+        
         </div>
       </div>
     </section>

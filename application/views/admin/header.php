@@ -103,18 +103,18 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Navigation</li>
         <li class="active treeview">
-          <a href="<?php echo base_url('controller'); ?>">
+          <a href="<?php echo base_url('c_admin'); ?>">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
         <li>
-          <a href="<?php echo base_url('controller/showPage/statistik'); ?>">
+          <a href="<?php echo base_url('c_admin/showPage/statistik'); ?>">
             <i class="fa fa-pie-chart"></i>
             <span>Statistik</span>
           </a>
         </li>
         <li>
-          <a href="<?php echo base_url('controller/showPage/create_kuisioner'); ?>">
+          <a href="<?php echo base_url('c_admin/showPage/create_kuisioner'); ?>">
             <i class="fa fa-edit"></i> <span>Buat Kuisioner</span>
           </a>
         </li>
